@@ -1,0 +1,46 @@
+<div class="container">
+
+    <form (ngSubmit)="editPizzaButton()">
+
+        <div class="form-group">
+            <label for="id">Id</label>
+            <input type="text" class="form-control" required  [(ngModel)]="pizza.id" name="id" disabled>
+        </div>
+    
+        <div class="form-group">
+            <label for="value">Crust</label>
+            <input type="text" class="form-control" required  [(ngModel)]="pizza.crust" name="crust" >
+        </div>
+    
+        <div class="form-group">
+            <label for="toppings">Toppings</label>
+            <input type="text" class="form-control" required  [(ngModel)]="pizza.toppings" name="toppings">
+        </div>
+    
+ 
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" required  [(ngModel)]="pizza.name" name="name">
+        </div>
+    
+        <div class="form-group">
+            <label for="pizzaStatus">Status</label>
+            <input type="text" class="form-control" required  [(ngModel)]="pizza.pizzaStatus" name="pizzaStatus" >
+        </div>
+
+        <br>
+    
+        <button type="submit" class="btn btn-success">Submit</button>
+
+    
+    
+    
+    </form>
+    
+    
+    
+    
+    
+    
+    
+    </div>

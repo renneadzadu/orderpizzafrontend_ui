@@ -1,0 +1,38 @@
+<div class="container">
+
+    <div style="text-align: center;" class="mt-5">
+    <button type="button" class="btn btn-success" (click)="goToAddPizza()" >Add Order</button>
+    </div>
+
+            <div class="table-responsive mt-5" style="text-align: center;">
+                <table class="table" *ngIf="pizzas.length">
+                    <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Crust</th>
+                        <th scope="col">Toppings</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Status</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr *ngFor="let pizza of pizzas">
+                        <td>{{pizza.id}}</td>
+                        <td>{{pizza.crust}}</td>
+                        <td>{{pizza.toppings}}</td>
+                        <td>{{pizza.name}}</td>
+                        <td>{{pizza.pizzaStatus}}</td>
+                        <td><button type="button" (click)="goToEditPizza(pizza.id)" class="btn btn-primary">Edit</button></td>
+                        <td><button type="button" (click)="goToViewPizza(pizza.id)"class="btn btn-warning">View</button></td>
+                        <td><button type="button" (click)="deletePizza(pizza.id)" class="btn btn-danger">Delete</button></td>
+                        
+                    </tr>
+                    
+                    </tbody>
+                </table>
+
+ 
+                </div>
+
+</div>

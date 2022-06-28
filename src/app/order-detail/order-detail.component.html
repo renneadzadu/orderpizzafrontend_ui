@@ -1,0 +1,49 @@
+
+    <div class="container">
+
+        <form (ngSubmit)="viewPizzaButton()">
+    
+            <div class="form-group">
+                <label for="id">Id</label>
+                <input type="text" class="form-control" required  [(ngModel)]="pizza.id" name="id" disabled>
+            </div>
+        
+            <div class="form-group">
+                <label for="value">Crust</label>
+                <input type="text" class="form-control" required  [(ngModel)]="pizza.crust" name="crust" disabled >
+            </div>
+        
+            <div class="form-group">
+                <label for="toppings">Toppings</label>
+                <input type="text" class="form-control" required  [(ngModel)]="pizza.toppings" name="toppings" disabled>
+            </div>
+        
+     
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" required  [(ngModel)]="pizza.name" name="name" disabled>
+            </div>
+        
+
+            <div class="form-group">
+                <label for="pizzaStatus">Status</label>
+                <input type="text" class="form-control" required  [(ngModel)]="pizza.pizzaStatus" name="pizzaStatus" disabled>
+            </div>
+        
+            <br>
+        
+            <button type="submit" class="btn btn-success">Home</button>
+        
+        
+        
+        </form>
+        
+        
+        
+        
+        
+        
+        
+        </div>
+        
+    
